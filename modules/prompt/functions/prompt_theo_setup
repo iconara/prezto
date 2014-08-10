@@ -1,0 +1,39 @@
+#
+# Authors:
+#   Theo Hultberg <theo@iconara.net>
+#
+
+# Load dependencies.
+pmodload 'helper'
+pmodload 'git'
+
+function prompt_theo_precmd {
+  setopt LOCAL_OPTIONS
+  unsetopt XTRACE KSH_ARRAYS
+
+  if (( $+functions[git-info] )); then
+    git-info
+  fi
+}
+
+function prompt_theo_setup {
+  setopt LOCAL_OPTIONS
+  unsetopt XTRACE KSH_ARRAYS
+
+  prompt_opts=(percent subst)
+
+  autoload -Uz add-zsh-hook
+  autoload -Uz git-info
+
+  add-zsh-hook precmd prompt_theo_precmd
+
+  zstyle ':prezto:module:git:info:branch' format '%b'
+  zstyle ':prezto:module:git:info:keys' format \
+    'branch' '%b'
+
+  PROMPT='%2~%# '
+  RPROMPT='%B%F{red}${git_info[branch]}%f%b %B%F{yellow}$(~/.rvm/bin/rvm-prompt)%f%b %m %T'
+}
+
+prompt_theo_setup "$@"
+
