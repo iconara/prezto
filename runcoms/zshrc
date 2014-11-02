@@ -22,9 +22,6 @@ alias gitc=gitx
 
 ### Tools
 
-# RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
@@ -33,3 +30,5 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 # Fuzzy finder
 source ~/.fzf.zsh
+# Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.rvm/bin"
