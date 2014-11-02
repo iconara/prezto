@@ -19,6 +19,7 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 alias zcat='gzcat'
 alias http='python -m SimpleHTTPServer'
 alias gitc=gitx
+alias vimr='open -a VimR'
 
 ### Tools
 
