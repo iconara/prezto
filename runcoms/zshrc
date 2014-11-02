@@ -28,7 +28,5 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # Travis
 [ -f /Users/theo/.travis/travis.sh ] && source /Users/theo/.travis/travis.sh
 
-# Fuzzy finder
-source ~/.fzf.zsh
 # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/.rvm/bin"
