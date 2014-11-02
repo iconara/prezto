@@ -11,7 +11,7 @@ unsetopt CORRECT
 export PATH="$HOME/bin:/usr/local/bin:$PATH"
 export MANPATH="/usr/local/man:$MANPATH"
 export HOMEBREW_NO_EMOJI=1
-export AWS_ACCESS_KEY_ID=AKIAJP3VWVXDDW7EDT5A
+export AWS_ACCESS_KEY_ID=AKIAIWIB763EXPAUMERA
 export AWS_DEFAULT_REGION=eu-west-1
 export LC_MESSAGES='en_US.UTF-8'
 export JAVA_HOME=$(/usr/libexec/java_home)
