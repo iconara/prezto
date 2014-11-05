@@ -9,6 +9,7 @@ fi
 unsetopt CORRECT
 unsetopt SHARE_HISTORY
 unsetopt INC_APPEND_HISTORY
+unsetopt AUTO_NAME_DIRS
 setopt CLOBBER
 
 export PATH="$HOME/bin:/usr/local/bin:$PATH"
