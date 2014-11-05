@@ -31,7 +31,7 @@ function prompt_theo_setup {
   zstyle ':prezto:module:git:info:keys' format \
     'branch' '%b'
 
-  PROMPT='%2~%# '
+  PROMPT='%2/%# '
   RPROMPT='%B%F{red}${git_info[branch]}%f%b %B%F{yellow}$(~/.rvm/bin/rvm-prompt)%f%b %m %T'
 }
 
