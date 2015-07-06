@@ -32,6 +32,9 @@ alias gitc=gitx
 export BOOL_HOME="/Users/theo/Documents/Code/bool"
 source "$BOOL_HOME/boolrc.sh"
 
+# AWS CLI
+source /usr/local/share/zsh/site-functions/_aws
+
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
