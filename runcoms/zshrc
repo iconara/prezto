@@ -28,6 +28,10 @@ alias gitc=gitx
 
 ### Tools
 
+# Bool
+export BOOL_HOME="/Users/theo/Documents/Code/bool"
+source "$BOOL_HOME/boolrc.sh"
+
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
