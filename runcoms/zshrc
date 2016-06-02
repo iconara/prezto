@@ -26,6 +26,7 @@ alias zcat='gzcat'
 alias http='python -m SimpleHTTPServer'
 alias gitc=gitx
 alias fixup='git commit --fixup $(git log --pretty=format:"%h%d %Creset%s [%cn]" --decorate | peco | cut -d " " -f 1)'
+alias bost='al | peco | multi-ssh2'
 
 ### Tools
 
