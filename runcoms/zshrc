@@ -58,3 +58,5 @@ export PATH="$PATH:/usr/local/google-cloud-sdk/bin"
 # iTerm
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+# Z
+source $(brew --prefix)/etc/profile.d/z.sh
