@@ -28,11 +28,14 @@ alias gitc=gitx
 alias fixup='git commit --fixup $(git log --pretty=format:"%h%d %Creset%s [%cn]" --decorate | peco | cut -d " " -f 1)'
 alias bost='al | peco | multi-ssh2'
 
-### Tools
+### Bool
 
-# Bool
 export BOOL_HOME="/Users/theo/Documents/Code/bool"
-source "$BOOL_HOME/boolrc.sh"
+source "$BOOL_HOME/bool.sh"
+
+bool --quiet plugin source aws bconf hbf zsh-complete zsh-hostfilter
+
+### Tools
 
 # AWS CLI
 source /usr/local/share/zsh/site-functions/_aws
