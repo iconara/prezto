@@ -55,3 +55,6 @@ export PATH="$PATH:$HOME/.rvm/bin"
 # Google Cloud SDK
 export PATH="$PATH:/usr/local/google-cloud-sdk/bin"
 
+# iTerm
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
