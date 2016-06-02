@@ -42,4 +42,4 @@ export PATH="/usr/local/heroku/bin:$PATH"
 [ -f /Users/theo/.travis/travis.sh ] && source /Users/theo/.travis/travis.sh
 
 # Add RVM to PATH for scripting
-export PATH="$PATH:$HOME/.rvm/bin"
+#export PATH="$PATH:$HOME/.rvm/bin"
