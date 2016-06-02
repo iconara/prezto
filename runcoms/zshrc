@@ -51,3 +51,7 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # rbenv
 #eval "$(rbenv init -)"
+
+# Google Cloud SDK
+export PATH="$PATH:/usr/local/google-cloud-sdk/bin"
+
