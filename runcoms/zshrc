@@ -64,4 +64,5 @@ export PATH="$PATH:/usr/local/google-cloud-sdk/bin"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # Z
+export _Z_DATA=~/.z/data
 source $(brew --prefix)/etc/profile.d/z.sh
