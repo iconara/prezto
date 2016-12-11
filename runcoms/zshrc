@@ -66,3 +66,6 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # Z
 export _Z_DATA=~/.z/data
 source $(brew --prefix)/etc/profile.d/z.sh
+
+# ZSH syntax highlighting
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
