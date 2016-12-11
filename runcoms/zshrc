@@ -28,6 +28,8 @@ alias http='python -m SimpleHTTPServer'
 alias gitc=gitx
 alias fixup='git commit --fixup $(git log --pretty=format:"%h%d %Creset%s [%cn]" --decorate | peco | cut -d " " -f 1)'
 alias bost='al | peco | multi-ssh2'
+alias be='ruby -r bundler/setup -S'
+alias bi='bundle install --binstubs=vendor/bin --path=vendor/bundle'
 
 ### Bool
 
@@ -48,10 +50,11 @@ export PATH="/usr/local/heroku/bin:$PATH"
 [ -f /Users/theo/.travis/travis.sh ] && source /Users/theo/.travis/travis.sh
 
 # Add RVM to PATH for scripting
-export PATH="$PATH:$HOME/.rvm/bin"
+# export PATH="$PATH:$HOME/.rvm/bin"
 
 # rbenv
-#eval "$(rbenv init -)"
+eval "$(rbenv init -)"
+export PATH="vendor/bin:$PATH"
 
 # Google Cloud SDK
 export PATH="$PATH:/usr/local/google-cloud-sdk/bin"
