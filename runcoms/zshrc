@@ -30,6 +30,7 @@ alias fixup='git commit --fixup $(git log --pretty=format:"%h%d %Creset%s [%cn]"
 alias bost='al | peco | multi-ssh2'
 alias be='ruby -r bundler/setup -S'
 alias bi='bundle install --binstubs=vendor/bin --path=vendor/bundle'
+alias dc='docker-compose'
 
 ### Bool
 
